@@ -14,6 +14,7 @@
 			<h2><? echo $item->nombre_articulo;?></h2>
 			<strong>Fecha de publicación: </strong><? echo $item->fecha_articulo;?>
 			<p><? echo $item->contenido_articulo;?></p>
+                        <span><? echo $item->id_categoria;?></span>
 			<hr>
 		<?
 	
