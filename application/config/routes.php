@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -40,6 +40,9 @@
 
 $route['default_controller'] = "indice";
 $route['404_override'] = '';
+//Muestra los detalles de un articulo por ID
+//$route['articulo/(:num)/:any'] = 'indice/articulo_detalles/$1';
+$route['articulo/(:any)'] = 'indice/articulo_detalles/$1';
 
 
 /* End of file routes.php */
