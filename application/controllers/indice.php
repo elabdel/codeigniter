@@ -10,8 +10,10 @@ class Indice extends CI_Controller {
 	//Pagina principal
         public function index(){
             $datos['articulos'] = $this->Articulos_model->lista_articulos();
-            $datos['titulo'] = "Aplicación - Titulo";
-            $this->load->view('index', $datos);
+            $datos['titulo'] = "Plantilla CI";
+            $datos['contenido'] = 'index';
+            $this->load->view('plantillas/front_end/plantilla', $datos);
+            //$this->load->view('front_end/index', $datos);
         }
         //Muestra los detalles de un articulo por ID
 //        public function articulo_detalles($id_articulo){
@@ -35,7 +37,9 @@ class Indice extends CI_Controller {
             //$nombre_limpio = str_replace('-', ' ', $nombre_articulo);
             $datos['detalles'] = $this->Articulos_model->articulo_detalles($url_limpia);
             $datos['titulo'] = $datos['detalles']->nombre_articulo;
-            $this->load->view('detalle',$datos);
+            $datos['contenido'] = 'detalle';
+            $this->load->view('plantillas/front_end/plantilla', $datos);
+            //$this->load->view('detalle',$datos);
         }
 }
 

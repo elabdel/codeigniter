@@ -5,9 +5,8 @@
 	</head>
 	<body>
 		<h1>Aplicación Dinámica con CodeIgniter</h1>
-		<br>
-		<br>
-		<center>
+                
+                <section class="contenido">
 		<?
 		foreach ($articulos as $item):
 //                      Muestra los detalles de un articulo por el nombre del articulo o el ID
@@ -23,9 +22,9 @@
                         <span><? echo $item->id_categoria;?></span>
 			<hr>
 		<?
-	
+                
 		endforeach;
 		?>
-		</center>
+		</section>
 	</body>
 </html>
