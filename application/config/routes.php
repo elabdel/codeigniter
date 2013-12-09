@@ -43,6 +43,7 @@ $route['404_override'] = '';
 //Muestra los detalles de un articulo por ID
 //$route['articulo/(:num)/:any'] = 'indice/articulo_detalles/$1';
 $route['articulo/(:any)'] = 'indice/articulo_detalles/$1';
+$route['calendario'] = 'indice/calendario';
 
 
 /* End of file routes.php */
