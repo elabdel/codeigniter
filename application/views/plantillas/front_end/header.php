@@ -15,10 +15,11 @@
         <nav>
             <section class="contenedor">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="<?  echo base_url().'indice/';?>">Inicio</a></li>
+                    <li><a href="<?  echo base_url().'indice/calendario';?>">Calendario</a></li>
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Nosotros</a></li>
+    
                 </ul>
             </section>
         </nav>

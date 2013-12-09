@@ -1,9 +1,3 @@
-﻿<!DOCTYPE html>
-<html>
-	<head>
-		<title><? echo $titulo;?></title>
-	</head>
-	<body>
 		<h1>Aplicación Dinámica con CodeIgniter</h1>
                 
                 <section class="contenido">
@@ -22,9 +16,19 @@
                         <span><? echo $item->id_categoria;?></span>
 			<hr>
 		<?
-                
 		endforeach;
-		?>
+                echo 'El tiempo de ejecución entre el inicio y el medio : ' . $this->benchmark->elapsed_time('inicio', 'medio');
+                 ?>
+                <br>
+                 <?
+                echo 'El tiempo de ejecución entre el medio y el fin : ' . $this->benchmark->elapsed_time('medio', 'fin');
+                ?>
+                 <br>
+                 <?
+                echo 'El tiempo de ejecución entre el inicio y el fin : ' . $this->benchmark->elapsed_time('inicio', 'fin');
+                ?>
+                 <br>
+                 <?
+                echo 'La memoria usada : ' . $this->benchmark->memory_usage();
+                ?>
 		</section>
-	</body>
-</html>
