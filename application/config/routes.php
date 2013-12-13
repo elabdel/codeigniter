@@ -44,6 +44,8 @@ $route['404_override'] = '';
 //$route['articulo/(:num)/:any'] = 'indice/articulo_detalles/$1';
 $route['articulo/(:any)'] = 'indice/articulo_detalles/$1';
 $route['calendario'] = 'indice/calendario';
+$route['productos'] = 'productos/lista_productos';
+$route['carrito'] = 'productos/mostrar_carrito';
 
 
 /* End of file routes.php */

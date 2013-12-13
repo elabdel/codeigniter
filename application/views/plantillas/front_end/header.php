@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="<?  echo base_url().'indice/';?>">Inicio</a></li>
                     <li><a href="<?  echo base_url().'indice/calendario';?>">Calendario</a></li>
-                    <li><a href="#">Productos</a></li>
+                    <li><a href="<?  echo base_url().'productos';?>">Productos</a></li>
                     <li><a href="#">Contacto</a></li>
     
                 </ul>
